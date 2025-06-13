@@ -3,11 +3,11 @@ dotenv.config();
 
 const conf = {
   AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "on",
-  AUTO_LIKE: process.env.AUTO_LIKE || "on",
+  AUTO_LIKE: process.env.AUTO_LIKE || "off",
   AUTO_READ_DM: process.env.AUTO_READ_DM || "off",
   AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || "off",
-  ADM: process.env.ANTI_DELETE || "on",
-  ON: process.env.OWNER_NAME || "FLASH-MD",
+  ADM: process.env.ANTI_DELETE || "off",
+  ON: process.env.OWNER_NAME || "Draco",
   ANTICALL: process.env.ANTICALL || "off",
   ANTIPROMOTE: process.env.ANTIPROMOTE || "off",
   ANTIDEMOTE: process.env.ANTIDEMOTE || "off",
@@ -22,7 +22,7 @@ const conf = {
   ? process.env.PREFIX.split(",").map(p => p.trim()) 
   : [""], 
   Session: process.env.SESSION || "",
-  NUMBER: process.env.OWNER_NUMBER || "",
+  NUMBER: process.env.OWNER_NUMBER || "254757725656",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || ""
 };
